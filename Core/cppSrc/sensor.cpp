@@ -10,7 +10,6 @@ namespace Sensor
 
     namespace
     {
-
         /** MAG_CH_EN 取值 → 使能的磁通道数量（表 8-5，Ch ~ Fh 为保留值）。 */
         constexpr uint8_t kMagChannelCount[16] = {
             0, 1, 1, 2, 1, 2, 2, 3, 3, 3, 3, 3, 0, 0, 0, 0,
@@ -35,7 +34,6 @@ namespace Sensor
 
         /** 触发模式下等待转换完成时，在估算时间上追加的裕量。 */
         constexpr uint32_t kConversionMarginUs = TMAG5273_CONV_MARGIN_US;
-
     }  // namespace
 
     /* ========================================================================== */
